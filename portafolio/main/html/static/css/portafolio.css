@@ -1,0 +1,291 @@
+
+body{
+    background-image: url("../img/portafolioFondo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+
+}
+.h2P{
+    font-size: 30px;
+    font-family: 'Courier New', Courier;
+    text-align: center;
+    
+}
+.h2P1{
+    font-size: 30px;
+    font-family: 'Courier New', Courier;
+    text-align: center;
+    margin-top: -7px;
+    
+}
+
+h1{
+    color: #FCA205;
+    font-family: 'Lobster';
+    font-size: 100px;
+    margin-left: 480px;
+    margin-top: 80px;
+
+}
+
+.cont{
+ 
+    width: 1160px;
+    height: 200px;
+    margin-left: 90px;
+    
+}
+
+.cuadro1P{
+    border-radius: 50px;
+    border: none;
+    width: 450px;
+    height: 80px;
+    position: absolute;
+    background:rgb(241, 125, 125);
+    margin-left: 20px;
+    margin-top: 30px;
+    padding: 15px;
+    font-family: 'Courier New', Courier;
+    text-align: justify;
+
+}
+
+.textP{
+    display: none;
+
+}
+
+.cuadro1P:hover .textP{
+    display: block;
+    
+}
+
+.cuadro1P:hover {
+    background:rgb(241, 125, 125);
+    font-family: 'Courier New', Courier;
+    width: 450px;
+    height: 420px;
+    border-radius: 50px;
+    border: none;
+    font-size: 16px;
+    margin-left: 20px;
+    padding: 15px;
+    
+}
+
+.cuadro2P{
+    border-radius: 50px;
+    border: none;
+    width: 450px;
+    height: 80px;
+    position: absolute;
+    background:rgb(241, 125, 125);
+    margin-left: 670px;
+    margin-top: 30px;
+    font-family: 'Courier New', Courier;
+    padding: 15px;
+    text-align: justify;
+
+}
+
+
+.cuadro2P:hover .textP{
+    display: block;
+    
+}
+
+.cuadro2P:hover {
+    background:rgb(241, 125, 125);
+    font-family: 'Courier New', Courier;
+    width: 450px;
+    height: 420px;
+    border-radius: 50px;
+    border: none;
+    font-size: 16px;
+    margin-left: 670px;
+    padding: 15px;
+
+
+    
+}
+
+.cont1.move-down {
+    transform: translateY(250px);
+}
+
+.cont1 {
+    transition: transform 0.5s ease;
+}
+
+
+.cont1{
+ 
+    width: 1160px;
+    height: 20px;
+    margin-left: 90px;
+    margin-top: -10px;
+    
+}
+
+.cuadro3P{
+    border-radius: 50px;
+    border: none;
+    width: 450px;
+    height: 80px;
+    position: absolute;
+    background:rgb(241, 125, 125);
+    margin-left: 20px;
+    margin-top: 30px;
+    padding: 15px;
+    font-family: 'Courier New', Courier;
+    text-align: justify;
+
+}
+
+
+
+.cuadro3P:hover .textP{
+    display: block;
+    
+}
+
+.cuadro3P:hover {
+    background:rgb(241, 125, 125);
+    font-family: 'Courier New', Courier;
+    width: 450px;
+    height: 420px;
+    border-radius: 50px;
+    border: none;
+    font-size: 16px;
+    margin-left: 20px;
+    padding: 15px;
+    
+}
+
+.cuadro4P{
+    border-radius: 50px;
+    border: none;
+    width: 450px;
+    height: 80px;
+    position: absolute;
+    background:rgb(241, 125, 125);
+    margin-left: 670px;
+    margin-top: 30px;
+    font-family: 'Courier New', Courier;
+    padding: 17px;
+    text-align: justify;
+
+}
+
+
+.cuadro4P:hover .textP{
+    display: block;
+    
+}
+.textP a{
+    background-color: rgb(151, 228, 228);
+    color: black;
+    text-decoration: none;
+
+}
+
+.cuadro4P:hover {
+    background:rgb(241, 125, 125);
+    font-family: 'Courier New', Courier;
+    width: 450px;
+    height: 420px;
+    border-radius: 50px;
+    border: none;
+    font-size: 16px;
+    margin-left: 670px;
+    padding: 15px;    
+    
+}
+
+.cont3{
+    background-color: #e4c083;
+    width: 1350px;
+    height: 114px;
+    margin-top: 432px;
+    position: absolute;
+    
+}
+
+/* _______________________________imagenes de redes_____________ */
+.redesPFa  a .imgPE{
+    width: 50px;
+    margin-top: 10px;
+    margin-left: 60px;
+}
+.redesPFa  a {
+background-color: transparent;
+}   
+
+.redesPIg a .imgPE {
+    width: 53px;
+    margin-top: -75px;
+    margin-left: 120px;
+
+}
+
+.redesPIg  a {
+    background-color: transparent;
+    }
+
+.redesPLi a .imgPE {
+        width: 50px;
+        margin-top: -120px;
+        margin-left: 180px;
+    
+    }
+    
+.redesPLi  a {
+        background-color: transparent;
+        }
+
+
+
+.redesPGit .imgPE{
+        width: 60px;
+        margin-top: -167px;
+        margin-left: 235px;
+}
+
+.redesPGit{
+    background-color: transparent;
+}
+
+.ca{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    padding-left: 15px;
+    padding-top: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT';
+    
+        }
+
+.dd .ca{
+    margin-top: 40px;
+    width: 250px;
+    height: 40px;
+    
+    margin-left: 80px;
+    position: absolute;
+    background-color: rgb(154, 199, 176);
+    border-radius: 50px;
+}
+
+.redes{
+    width: 300px;
+    height: 70px;
+    margin-left: 900px;
+    margin-top: 15px;
+    position: absolute;
+    
+    }
+
+
+

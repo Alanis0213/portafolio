@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <style>
+        #barra{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-transform: uppercase;
+            margin-top: 20px;
+            
+
+            
+        }
+        #barra li{
+            display: inline;
+
+            margin-left: 50px;
+            margin-top: 100px;
+            
+        }
+
+        .divMenu{
+            width: 800px;
+            height: 50px;
+            border-radius: 50px;
+            margin-left: 30px;
+}
+        .a{
+            
+               
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 20px;
+            font-family: 'Courier New';
+            margin-top: 250px;
+        }
+
+        .a:hover{
+            background-color: rgb(124, 178, 209);
+            color: black;
+        }
+
+    </style>
+
+    <div> 
+        <ul id="barra">
+            <li><a class="a" href="{% url 'index' %}">Home</a></li>
+            <li><a class="a" href="#contacto">Contacto</a></li>
+            <li><a class="a" href="{% url 'portafolio' %}">Portafolio</a></li>
+            
+        </ul>
+        </div>
+</body>
+</html>

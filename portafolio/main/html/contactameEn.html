@@ -1,0 +1,32 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Contacto{% endblock %}</title>
+    
+</head>
+<body>
+  {% block content %}
+      <form method="POST" action="">
+        {% csrf_token %}
+        <h2 class="h2C">CONTACT US</h2>
+        <p><input type="text" name="name" placeholder="Write your name here.." required></p>
+        <p><input type="email" name="email" placeholder="Let us know how to contact you back.." required></p>
+        <p><textarea name="message" placeholder="What would you like to tell us.." required></textarea></p>
+        <button class="buttonC" type="submit">Send Message</button>
+
+        <div class="info">
+          <span></span><a href="tel:+57 300 3077480">300 3077480</a>
+          <span></span><a href="mailto:alanisdeavilat@gmail.com">alanisdeavilat@gmail.com</a>
+        </div>
+      </form>
+
+      {% endblock %}
+
+      
+    
+</body>
+</html>

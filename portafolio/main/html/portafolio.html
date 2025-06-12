@@ -1,0 +1,124 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    
+    
+
+
+    <link rel="stylesheet" href="{% static 'css/portafolio.css' %}">
+</head>
+<body>
+    {% include 'menu.html' %}
+    <h1>Portafolio</h1>
+
+    <div class="cont">
+        <div class="cuadro1P">
+           
+            <h2 class="h2P">
+                Interfaz-aviones
+            </h2>
+            <div class="textP">
+                <p>
+                    Este proyecto implementa un Sistema de Reserva de vuelos en Java a través de módulos utilizando interfaz gráfica para la ejecución de este programa, este sistema muestra diferentes funciones que permiten registrar pasajeros y aeropuertos, crear vuelos, entre otras operaciones. A través de una interfaz principalmente podrás resrvar un asiento en un vuelo que se encuentra disponible
+                </p>
+                <a href="https://github.com/Alanis0213/Interfaz-aviones">repositorio</a>
+            </div>
+           
+        </div>
+        <div class="cuadro2P">
+           
+            <h2 class="h2P" >
+                Biblioteca con listas
+            </h2>
+            <div class="textP">
+                <p>
+                    Este proyecto implementa un Sistema de Gestión de Librería en Python a través de listas compuestas, este sistema ofrece diferentes funciones para administrar clientes, libros y ventas dentro de una librería. A través de una interfaz de consola, los usuarios pueden realizar diversas operaciones, como ingresar clientes, registrar libros, realizar ventas y obtener estadísticas sobre las ventas realizadas y clientes.</p>
+                    <a href="https://github.com/Alanis0213/listas-Biblioteca.git">repositorio</a>
+            </div>
+           
+        </div>
+
+    </div>
+     <div class="cont1" id="contenedor-secundario">
+
+        <div class="cuadro3P">
+           
+            <h2 class="h2P" >
+                BaseDeDatos-Biblioteca
+
+            </h2>
+            <div class="textP">
+                <p>
+                    Este proyecto implementa un Sistema de Gestión de Librería en Python a través de módulos utilizando interfaz gráfica para la ejecución de este programa, este sistema muestra diferentes funciones para administrar los libros, los clientes y las ventas y compras que puedan realizar. A través de una interfaz, los usuarios pueden realizar diversas operaciones, como ingresar clientes, registrar libros, realizar ventas y obtener estadísticas sobre las ventas reales y clientes.
+                </p>
+                <a href="https://github.com/Alanis0213/BaseDeDatos-Biblioteca.git">repositorio</a>
+            </div>
+           
+        </div>
+        <div class="cuadro4P">
+           
+            <h2 class="h2P1" >
+                Aeropuerto con Base de Datos
+            </h2>
+            <div class="textP">
+                <p>
+                    Este proyecto implementa un Sistema de gestión de un banco en Java en el que se usan distintas clases para llevar todo a la ejecución en la App.java desde la terminal de su editor de código, en este programa encontramos diversas funciones como lo son crear un banco, agregar un cliente a un banco, entre otras opciones.</p>
+                    <a href="https://github.com/Alanis0213/Proyecto-banco.git">repositorio</a>
+            </div>
+           
+        </div>
+
+    </div>
+    <div class="cont3" id="contacto">
+        
+        <div class="dd"> <a class="ca" href="mailto:alanisdeavilat@gmail.com">alanisdeavilat@gmail.com</a> </div>
+        
+        <div  class="redes">
+            
+            <div class="redesPFa">
+                <a href="https://www.facebook.com/alanismaria.deavilatorres"> <img class="imgPE" src="{% static 'img/facebook.png'%}" alt=""></a>
+            </div>
+            <div class="redesPIg">
+                <a href="https://www.instagram.com/alanis.deavila/"> <img class="imgPE" src="{% static 'img/instagram.png'%}" alt=""></a>
+            </div>
+            <div class="redesPLi">
+                <a href="https://www.linkedin.com/in/de-avila-alanis-9472a9310/"> <img class="imgPE" src="{% static 'img/linkedin.png'%}" alt=""></a>
+            </div>
+            <div class="redesPGit">
+                <a href="https://github.com/Alanis0213"> <img class="imgPE" src="{% static 'img/GITHUB.png'%}" alt=""></a>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <script>
+        const cuadros = document.querySelectorAll('.cuadro1P, .cuadro2P');
+        const cont1 = document.getElementById('contenedor-secundario');
+
+        cuadros.forEach(cuadro => {
+            cuadro.addEventListener('mouseenter', () => {
+            cont1.classList.add('move-down');
+            });
+
+            cuadro.addEventListener('mouseleave', () => {
+            cont1.classList.remove('move-down');
+            });
+        });
+    </script>
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.2/dist/umd/popper.min.js" integrity="sha384-q9CRHqZndzlxGLOj+xrdLDJa9ittGte1NksRmgJKeCV9DrM7Kz868XYqsKWPpAmn" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</body>
+</html>
